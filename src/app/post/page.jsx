@@ -7,7 +7,7 @@ const createPost = () => {
   const [valid, setValid] = useState(false);
   const [value, setValue] = useState(false);
 
-  const a = () => {
+  const click = () => {
     if (inputValue === "") {
       setValid(true);
     } else {
@@ -48,7 +48,7 @@ const createPost = () => {
             onChange={(e) => setInputTextValue(e.target.value)}
           />
           {value ? <div className="alert">alert</div> : null}
-          <button onClick={() => a()} className="submit">
+          <button onClick={() => click()} className="submit">
             submit
           </button>
         </div>
